@@ -1,25 +1,10 @@
-# Analýza EKG signálu
+# Projekt: Prienik kružníc
 
-Krátký přehled projektu pro cvičení 6.
+## Popis
+Tento projekt zisťuje, či sa dve kružnice pretínajú a koľko majú prienikov (0, 1 alebo 2).  
+Program:
 
-## Co skript dělá
-
-- načte data z `ekg_signal.txt`,
-- spočítá min, max a průměr,
-- vykreslí signál přes `matplotlib`.
-
-## Spuštění
-
-```powershell
-uv run python .\use_signal_plot_ops.py
-```
-
-## Malý výpočet
-
-\[
-d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
-\]
-
-![Malý náhled grafu](../assets/cviceni_06/maly_nahled.svg)
-
-Více informací je v [přehledu cvičení](./README.md).
+- vypočíta, či sa kružnice pretínajú,
+- vráti výsledok ako slovník napr. {"is_intersection": True, "intersections_count": 2},
+- vypíše stručný textový výstup do terminálu,
+- vykreslí obe kružnice v grafickom okne pomocou knižnice matplotlib.
